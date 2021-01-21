@@ -1,4 +1,7 @@
 <?php
+namespace App;
+
+use App\ItemArray;
 
 class MyArray {
 
@@ -8,11 +11,11 @@ class MyArray {
         $this->arr = $arr;
     }
 
-    public function searchArr(string $key) : bool {
+    public function hasItem($key) {
         return array_key_exists($key, $this->arr) ? true : false;
     }
 
-    public function deleteArrElem($key) {
+    public function only($key) {
         if(!is_array($key)) {
             unset($this->arr[$key]);
         } else {

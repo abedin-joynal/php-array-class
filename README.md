@@ -1,4 +1,6 @@
 # php-array-class
 
 ### 
-Simple php class demonstration
+```bash
+$ composer install
+```
